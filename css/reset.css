@@ -27,7 +27,7 @@
 }
 
 html{
-    border:1px solid #000;
+    /* border:1px solid #000; */
 }
 
 body{
@@ -43,29 +43,177 @@ h1, h2, h3{
     font-weight: bold;
 }
 
+li{
+    text-decoration: none;
+    list-style-type: none;
+}
+
 /*Setup header*/
 header{
     background-color: var(--primary-background) ;
-    width: 1500px;
-    height: 80vh;  
+    height: 80vh; 
+    max-width: 100%; 
+    width:94rem;
+    
 }
 
 .header-root{
     width: 100%;
-    height: 100%;
-    border-top-right-radius: 8px;
-    border-top-left-radius: 8px;
+    height: 20%;
+   
 }
 
 
 .header{
-    width: 100%;
     height: 60%;
-    background-color: red;
+    background-color: var(--second-background);
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    align-items: center;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.header>.box-2{
+    display: flex;
+}
+.header>.box-3{
+    display: flex;
+}
+.header>.box-3>.icon-phone{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid #000;
+    padding: 5px;
+    margin-right: 10px;
+}
+.header>.box-3>.icon-phone:hover{
+    background-color: #383636;
+}
+.header>.box-4{
+    display: flex;
+}
+.header>.box-4>.icon-heart{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid #000;
+    padding: 6px;
+    margin-right: 10px;
+}
+.header>.box-4>.icon-heart:hover{
+    background-color: #383636;
+}
+.header>.box-5{
+    display: flex;
+}
+.header>.box-5>.icon-user{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid #000;
+    padding: 6px;
+    margin-right: 10px;
+}
+.header>.box-5>.icon-user:hover{
+    background-color: #383636;
+}
+
+.header>.box-6{
+    display: flex;
+}
+.header>.box-6>.icon-cart{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid #2d2c2c;
+    padding: 6px;
+    margin-right: 10px;
+    color: var(--second-background);
+    background-color: #383636;   
+}
+.header>.box-6>.icon-cart:hover{
+    background-color: #000;
+}
+
+
+
+.input{
+    width: 400px;
+    height: 35px;
+    border: 0px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 7px;
+}
+#myCanvas{
+    position:relative;
+    top: -5px;
+    left: -180px;
+}
+.many-select{
+    width: 120px;
+    height: 35px;
+    border: 0px;
+    padding: 7px;
+}
+.button{
+    width: 40px;
+    height: 35px;
+    border: 0px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #383636;
+    color: var(--second-background);
+    font-size: larger; 
+}
+.button:hover{
+    background-color: #000;
 }
 
 .nav{
-    width: 100%;
     height: 40%;
-    background-color: blue;
+    background: var(--second-background);
+    display: flex;
+    margin: auto;
 }
+
+.nav .menu_bottom_left{
+    width: 35%;
+    height: 100%;
+    /* background: var(--second-background); */
+}
+.nav .menu_bottom_center{
+    width: 40%;
+    height: 100%;
+    /* background: var(--second-background); */
+
+}
+.nav .menu_bottom_right{
+    width: 25%;
+    height: 100%;
+    /*background: var(--second-background);*/
+}
+
+/*Sub menu left*/
+.nav .menu_bottom_left .sub_menu_left, 
+.nav .menu_bottom_right .sub_menu_right{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    font-size: 12.5px;
+}
+.nav .menu_bottom_right .sub_menu_right{
+    padding-right: 45px;
+}
+
+.item{
+    font-weight:600;
+}
+.line{
+    width: 100%;
+    border-top: #e6dfdf solid .751px;
+}
+
